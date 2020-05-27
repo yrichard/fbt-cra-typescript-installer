@@ -1,3 +1,26 @@
 {
-  "name": "fbt-cra-typescript-installer"
+  "name": "fbt-cra-typescript-installer",
+  "version": "0.0.1",
+  "description": " Installer for the FBT API within CRA and TypeScript environments.",
+  "main": "install.js",
+  "scripts": {
+    "postinstall": "install.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fbt",
+    "react",
+    "create-react-app",
+    "cra",
+    "typescript",
+    "craco"
+  ],
+  "author": "Yohann Richard",
+  "license": "MIT",
+  "dependencies": {
+    "@craco/craco": "^5.6.4",
+    "babel-plugin-fbt": "^0.14.1",
+    "babel-plugin-fbt-runtime": "^0.9.11",
+    "fbt": "^0.14.0"
+  }
 }
