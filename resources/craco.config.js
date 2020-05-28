@@ -10,7 +10,6 @@ module.exports = {
         },
       ],
       "babel-plugin-fbt-runtime",
-      //"@babel/plugin-transform-typescript",
     ],
   },
 };

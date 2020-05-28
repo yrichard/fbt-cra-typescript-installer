@@ -1,3 +1,8 @@
+// Copyright (c) 2020 by Yohann Richard
+//
+// Use of this source code is governed by an MIT license that
+// can be found in the LICENSE file distributed with this file.
+
 module.exports = {
   ROOT_DIR: "../../",
   FILES_TO_COPY: [
