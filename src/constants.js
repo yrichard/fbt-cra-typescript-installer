@@ -17,18 +17,13 @@ module.exports = {
       allowOverwrite: false,
     },
     {
-      filename: "tsconfig.fbt.extends.json",
-      destination: "./",
-      allowOverwrite: true,
-    },
-    {
       filename: "globals.d.ts",
-      destination: "./src/@types/",
+      destination: "./node_modules/@types/fbt-cra-ts-installer/",
       allowOverwrite: true,
     },
     {
       filename: "index.d.ts",
-      destination: "./src/@types/",
+      destination: "./node_modules/@types/fbt-cra-ts-installer/",
       allowOverwrite: true,
     },
     {

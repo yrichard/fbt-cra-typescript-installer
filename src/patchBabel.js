@@ -1,7 +1,5 @@
-// Copyright (c) 2020
-//
-// Use of this source code is governed by an MIT license that
-// can be found in the LICENSE file distributed with this file.
+// Thanks to Mur Amur for publishing these steps.
+// https://dev.to/retyui/how-to-add-support-typescript-for-fbt-an-internationalization-framework-3lo0
 
 const { readFileSync, writeFileSync } = require("fs");
 
