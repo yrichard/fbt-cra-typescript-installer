@@ -20,8 +20,11 @@
   "homepage": "https://github.com/yrichard/fbt-cra-typescript-installer",
   "author": "Yohann Richard",
   "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.1"
+  },
   "dependencies": {
-    "@babel/core": "^7.10.1",
     "@babel/node": "^7.10.1",
     "@babel/plugin-transform-typescript": "^7.10.1",
     "@babel/preset-typescript": "^7.10.1",

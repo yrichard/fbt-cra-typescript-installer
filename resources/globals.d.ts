@@ -1,5 +1,8 @@
 /// <reference types="react" />
 
+// Thanks to Mur Amur for publishing these steps.
+// https://dev.to/retyui/how-to-add-support-typescript-for-fbt-an-internationalization-framework-3lo0
+
 declare namespace FBT {
   type $Values<T> = T[keyof T];
 

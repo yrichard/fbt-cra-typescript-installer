@@ -13,15 +13,7 @@ module.exports = function () {
   let rawdata = readFileSync(FILE_PATH);
 
   const tsconfig = JSON.parse(rawdata) || {};
-  tsconfig.compilerOptions = tsconfig.compilerOptions || {};
-  tsconfig.compilerOptions.baseUrl = tsconfig.compilerOptions.baseUrl || "./";
-  tsconfig.compilerOptions.paths = tsconfig.compilerOptions.paths || {};
-  tsconfig.compilerOptions.paths["*"] =
-    tsconfig.compilerOptions.paths["*"] || [];
-
-  if (tsconfig.compilerOptions.paths["*"].indexOf("./src/@types/*") === -1) {
-    tsconfig.compilerOptions.paths["*"].push("./src/@types/*");
-  }
+  tsconfig.extends = "./tsconfig.fbt.extends.json";
 
   writeFileSync(FILE_PATH, format(tsconfig, {}));
 };

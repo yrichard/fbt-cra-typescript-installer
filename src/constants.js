@@ -15,6 +15,10 @@ module.exports = {
       destination: "./",
     },
     {
+      filename: "tsconfig.fbt.extends.json",
+      destination: "./",
+    },
+    {
       filename: "globals.d.ts",
       destination: "./src/@types/",
     },
