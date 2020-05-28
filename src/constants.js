@@ -9,27 +9,43 @@ module.exports = {
     {
       filename: "babel.config.js",
       destination: "./",
+      allowOverwrite: false,
     },
     {
       filename: "craco.config.js",
       destination: "./",
+      allowOverwrite: false,
     },
     {
       filename: "tsconfig.fbt.extends.json",
       destination: "./",
+      allowOverwrite: true,
     },
     {
       filename: "globals.d.ts",
       destination: "./src/@types/",
+      allowOverwrite: true,
     },
     {
       filename: "index.d.ts",
       destination: "./src/@types/",
+      allowOverwrite: true,
     },
     {
       filename: "fr_FR.json",
       destination: "./translations/",
+      allowOverwrite: false,
     },
   ],
   FILES_LOCATION: "./resources/",
+  FBT_SCRIPTS: {
+    manifest: "babel-node node_modules/.bin/fbt-manifest --src src",
+    "collect-fbts":
+      "babel-node node_modules/.bin/fbt-collect --pretty --manifest < .src_manifest.json > .source_strings.json",
+    "test-collect-fbts":
+      "babel-node node_modules/.bin/fbt-collect --plugins @babel/plugin-syntax-flow --pretty --manifest < .src_manifest.json > .test_source_strings.json",
+    "translate-fbts":
+      "babel-node node_modules/.bin/fbt-translate --translations translations/*.json --jenkins > src/translatedFbts.json",
+    "all-fbts": "yarn manifest && yarn collect-fbts && yarn translate-fbts",
+  },
 };

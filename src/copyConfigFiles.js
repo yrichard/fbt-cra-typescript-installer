@@ -11,6 +11,12 @@ module.exports = function () {
     try {
       fs.mkdirSync(ROOT_DIR + fileInfo.destination);
     } catch (e) {}
+    if (
+      !fileInfo.allowOverwrite &&
+      fs.existsSync(ROOT_DIR + fileInfo.destination + fileInfo.filename)
+    ) {
+      return;
+    }
     fs.copyFileSync(
       FILES_LOCATION + fileInfo.filename,
       ROOT_DIR + fileInfo.destination + fileInfo.filename

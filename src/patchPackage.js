@@ -4,19 +4,8 @@
 // can be found in the LICENSE file distributed with this file.
 
 const { readFileSync, writeFileSync } = require("fs");
-const { ROOT_DIR } = require("./constants.js");
+const { ROOT_DIR, FBT_SCRIPTS } = require("./constants.js");
 const { format } = require("prettier-package-json");
-
-const fbtScripts = {
-  manifest: "babel-node node_modules/.bin/fbt-manifest --src src",
-  "collect-fbts":
-    "babel-node node_modules/.bin/fbt-collect --pretty --manifest < .src_manifest.json > .source_strings.json",
-  "test-collect-fbts":
-    "babel-node node_modules/.bin/fbt-collect --plugins @babel/plugin-syntax-flow --pretty --manifest < .src_manifest.json > .test_source_strings.json",
-  "translate-fbts":
-    "babel-node node_modules/.bin/fbt-translate --translations translations/*.json --jenkins > src/translatedFbts.json",
-  "all-fbts": "yarn manifest && yarn collect-fbts && yarn translate-fbts",
-};
 
 // Patch Babel
 module.exports = function () {
@@ -33,8 +22,8 @@ module.exports = function () {
   }
 
   package.scripts = {
+    ...FBT_SCRIPTS,
     ...scripts,
-    ...fbtScripts,
   };
 
   writeFileSync(FILE_PATH, format(package, {}));
