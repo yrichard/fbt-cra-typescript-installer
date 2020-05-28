@@ -17,6 +17,7 @@ For a full setup:
 ### Create a new React App using CRA:
 
 `npx create-react-app my-fbt-app --template typescript`
+
 `cd my-fbt-app`
 
 ### Install the fbt-cra-typescript-installer module:
