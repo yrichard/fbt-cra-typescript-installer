@@ -1,7 +1,7 @@
 {
   "name": "fbt-cra-typescript-installer",
   "version": "0.0.2",
-  "description": " Installer for the FBT API within CRA and TypeScript environments.",
+  "description": "Installer for the FBT API within CRA and TypeScript environments.",
   "scripts": {
     "postinstall": "node postinstall.js"
   },
@@ -13,6 +13,11 @@
     "typescript",
     "craco"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yrichard/fbt-cra-typescript-installer"
+  },
+  "homepage": "https://github.com/yrichard/fbt-cra-typescript-installer",
   "author": "Yohann Richard",
   "license": "MIT",
   "dependencies": {
