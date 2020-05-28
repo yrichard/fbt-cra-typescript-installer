@@ -14,33 +14,33 @@ This module will help you deploy the FBT API on top of a vanilla React App that 
 
 For a full setup:
 
-# Create a new React App using CRA:
+### Create a new React App using CRA:
 
 `npx create-react-app my-fbt-app --template typescript`
 `cd my-fbt-app`
 
-# Install the fbt-cra-typescript-installer module:
+### Install the fbt-cra-typescript-installer module:
 
 `yarn add fbt-cra-typescript-installer`
 
-# Run the fbt scripts
+### Run the fbt scripts
 
 `yarn all-fbts`
 
-# Start the application to make sure everything works.
+### Start the application to make sure everything works.
 
 `yarn start`
 
 ## More documentations:
 
-# Full documentation
+### Full documentation
 
 https://facebook.github.io/fbt
 
-# Tips on how to use FBT's advanced features with TypeScript:
+### Tips on how to use FBT's advanced features with TypeScript:
 
 https://dev.to/retyui/how-to-add-support-typescript-for-fbt-an-internationalization-framework-3lo0
 
-# Step by step deployment of FBT with CRA and typescript:
+### Step by step deployment of FBT with CRA and typescript:
 
 https://medium.com/@frenchyooy/configuring-fbt-api-with-typescript-and-react-create-app-492ee72f44bb
