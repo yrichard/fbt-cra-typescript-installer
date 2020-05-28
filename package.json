@@ -1,6 +1,6 @@
 {
   "name": "fbt-cra-typescript-installer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": " Installer for the FBT API within CRA and TypeScript environments.",
   "scripts": {
     "postinstall": "node postinstall.js"
