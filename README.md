@@ -32,6 +32,10 @@ For a full setup:
 
 `yarn start`
 
+### Something doesn't work?
+
+See if there's anything interesting in the log file fbt-cra-typescript-installer.log (only created if the script finds something unexpected).
+
 ## More documentations:
 
 ### Full documentation

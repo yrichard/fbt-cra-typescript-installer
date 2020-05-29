@@ -5,6 +5,7 @@
 
 module.exports = {
   ROOT_DIR: "../../",
+  LOG_FILE: "fbt-cra-typescript-installer.log",
   FILES_TO_COPY: [
     {
       filename: "babel.config.js",
