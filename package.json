@@ -2,8 +2,9 @@
   "name": "fbt-cra-typescript-installer",
   "version": "0.0.7",
   "description": "Installer for the FBT API within CRA and TypeScript environments.",
-  "scripts": {
-    "postinstall": "node postinstall.js"
+  "scripts": {},
+  "bin": {
+    "fbt-cra-ts-install": "./postinstall.js"
   },
   "keywords": [
     "fbt",
@@ -22,7 +23,8 @@
   "license": "MIT",
   "devDependencies": {
     "@babel/cli": "^7.10.1",
-    "@babel/core": "^7.10.1"
+    "@babel/core": "^7.10.1",
+    "@babel/plugin-transform-typescript": "^7.10.1"
   },
   "dependencies": {
     "@babel/node": "^7.10.1",

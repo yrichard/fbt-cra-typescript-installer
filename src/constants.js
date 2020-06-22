@@ -4,7 +4,7 @@
 // can be found in the LICENSE file distributed with this file.
 
 module.exports = {
-  ROOT_DIR: "../../",
+  ROOT_DIR: "./",
   LOG_FILE: "fbt-cra-typescript-installer.log",
   FILES_TO_COPY: [
     {
@@ -33,7 +33,7 @@ module.exports = {
       allowOverwrite: false,
     },
   ],
-  FILES_LOCATION: "./resources/",
+  FILES_LOCATION: "./node_modules/fbt-cra-typescript-installer/resources/",
   FBT_SCRIPTS: {
     manifest: "babel-node node_modules/.bin/fbt-manifest --src src",
     "collect-fbts":
