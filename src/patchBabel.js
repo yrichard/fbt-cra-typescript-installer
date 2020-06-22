@@ -26,7 +26,7 @@ module.exports = function (logger) {
     logger.log(
       "@babel/plugin-transform-typescript/lib/index.js already patched"
     );
-    process.exit(0);
+    return;
   }
 
   const cantFindMarkerString = !data.includes(locator);
@@ -50,6 +50,6 @@ module.exports = function (logger) {
     logger.log(
       "@babel/plugin-transform-typescript/lib/index.js failed to be patched"
     );
-    process.exit(0);
+    return;
   }
 };
