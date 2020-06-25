@@ -32,7 +32,6 @@
     "babel-plugin-fbt": "^0.14.1",
     "babel-plugin-fbt-runtime": "^0.9.11",
     "fbt": "^0.14.0",
-    "fbt-cra-typescript-installer": "file:/Users/SuperOli/massivebruh/fbt-cra-typescript-installer",
     "prettier-package-json": "^2.1.3",
     "react": "^16.13.1",
     "react-scripts": "^3.4.1"
