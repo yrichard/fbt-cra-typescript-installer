@@ -9,54 +9,40 @@ function patchFile(object, logger){
         replace
     } = object;
 
-    const FILE_PATH = require.resolve(
-        file
-    );
+    const FILE_PATH = require.resolve(file);
     
     let data = readFileSync(FILE_PATH).toString();
     const isAlreadyPatched = data.includes(patchLocator);
 
     if (isAlreadyPatched) {
-        logger.log(
-            file.toString() + " already patched"
-        );
-    return;
+      logger.log(file.toString() + " already patched");
+      return;
     }
 
     const cantFindMarkerString = !data.includes(locator);
 
     if (cantFindMarkerString) {
-        logger.log(
-            "babel-plugin-fbt/FbtConstants.js cannot be patched"
-        );
+        logger.log("babel-plugin-fbt/FbtConstants.js cannot be patched");
     }
 
     if(replace){
-        writeFileSync(
-            FILE_PATH,
-            data.replace(
-                locator,
-                `${patch}`
-            )
-        );
+      writeFileSync(
+        FILE_PATH,
+        data.replace(locator, `${patch}`)
+      );
     } else {
-        writeFileSync(
-            FILE_PATH,
-            data.replace(
-            locator,
-            `${patch}\n` + locator
-            )
-        );
+      writeFileSync(
+        FILE_PATH,
+        data.replace(locator, `${patch}\n` + locator)
+      );
     }
     
-      data = readFileSync(FILE_PATH).toString();
-      if (!data.includes(patchLocator)) {
-        logger.log(
-          file.toString() + " failed to be patched"
-        );
+    data = readFileSync(FILE_PATH).toString();
+    if (!data.includes(patchLocator)) {
+      logger.log(file.toString() + " failed to be patched");
         return;
-      }
-
+    }
+    
 }
 
 module.exports = function (logger) {
