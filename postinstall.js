@@ -4,6 +4,7 @@ const patchBabel = require("./src/patchBabel");
 const patchPackage = require("./src/patchPackage");
 const copyConfigFiles = require("./src/copyConfigFiles");
 const checkTsConfig = require("./src/checkTsConfig");
+const patchBabelPluginFBT = require("./src/patchBabelPluginFBT");
 const Logger = require("./src/logger");
 
 const logger = new Logger();
@@ -14,5 +15,6 @@ if(hasNoParam || parameters.indexOf("--patchBabel") != -1) patchBabel(logger);
 if(hasNoParam || parameters.indexOf("--patchPackage") != -1) patchPackage(logger);
 if(hasNoParam || parameters.indexOf("--copyConfigFiles") != -1) copyConfigFiles(logger);
 if(hasNoParam || parameters.indexOf("--checkTsConfig") != -1) checkTsConfig(logger);
+if(hasNoParam || parameters.indexOf("--patchBabelPluginFBT") != -1) patchBabelPluginFBT(logger);
 
 logger.flush();
