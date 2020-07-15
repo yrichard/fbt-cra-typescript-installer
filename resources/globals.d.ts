@@ -54,7 +54,12 @@ declare namespace FBT {
   type IntlVariationsValues = $Values<IntlVariations>;
   type GenderConstValues = $Values<GenderConst>;
 
-  type Translations = { [locale: string]: { [key: string]: string } };
+  type Translations = {
+    [locale: string]: {
+      [key: string]:
+      string | { [key: string]: string }
+    }
+  };
 
   interface Options {
     author?: string;
