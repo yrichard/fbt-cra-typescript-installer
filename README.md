@@ -54,5 +54,10 @@ https://dev.to/retyui/how-to-add-support-typescript-for-fbt-an-internationalizat
 
 https://medium.com/@frenchyooy/configuring-fbt-api-with-typescript-and-react-create-app-492ee72f44bb
 
+### FBT Components
+
+For FBT Parameters and Interpolation, use <FbtParam> or FbtParam( ... );
+
+For FBT Enumerations, use <FbtEnum> or FbtEnum( ... );
 
 ### As of July 20, 2020, FBTPlural and FBTPronoun are not functional
