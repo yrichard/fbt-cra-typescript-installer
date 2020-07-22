@@ -24,11 +24,15 @@ For a full setup:
 
 `yarn add fbt-cra-typescript-installer`
 
+### Install fbt-cra-ts
+
+`yarn run fbt-cra-ts-install`
+
 ### Run the fbt scripts
 
 `yarn all-fbts`
 
-### Start the application to make sure everything works.
+### Start the application to make sure everything works: 
 
 `yarn start`
 
@@ -49,3 +53,6 @@ https://dev.to/retyui/how-to-add-support-typescript-for-fbt-an-internationalizat
 ### Step by step deployment of FBT with CRA and typescript:
 
 https://medium.com/@frenchyooy/configuring-fbt-api-with-typescript-and-react-create-app-492ee72f44bb
+
+
+### As of July 20, 2020, FBTPlural and FBTPronoun are not functional
